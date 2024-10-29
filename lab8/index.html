@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Order Form</title>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+</head>
+<body>
+    <script src="script.js"></script>
+    <form id="order-form">
+        <label for="order-number">Номер замовлення:</label>
+        <input type="text" id="order-number" required>
+
+        <label for="weight">Вага:</label>
+        <input type="number" id="weight" required>
+
+        <label for="city">Місто:</label>
+        <select id="city" required></select>
+
+        <label for="delivery-type">Тип доставки:</label>
+        <select id="delivery-type">
+            <option value="branch">Відділення</option>
+            <option value="locker">Поштомат</option>
+        </select>
+
+        <label for="branch-locker">Відділення/Поштомат:</label>
+        <select id="branch-locker" required></select>
+
+        <button type="submit">Оформити замовлення</button>
+    </form>
+
+    <div id="response"></div>
+</body>
+</html>
