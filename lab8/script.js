@@ -1,5 +1,7 @@
+require('dotenv').config
+
 $(document).ready(function() {
-    const apiKey = 'e9f4519781b56edbd1142824c2d2ff9f';
+    const apiKey = process.env.API_KEY;
 
     function loadCities() {
         $.ajax({
